@@ -21,3 +21,19 @@ docker run -d \
   -e MONGO_INITDB_ROOT_PASSWORD=1 \
   mongo:latest
 ```
+
+### Step 3: Verify MongoDB Container
+
+- Check if the container is running by executing the following command:
+```bash
+docker ps
+```
+
+- Expected Output:
+```markdown
+
+
+CONTAINER ID   IMAGE         COMMAND      CREATED        STATUS       PORTS                      NAMES
+abc12345       mongo:latest  "mongo"     10 seconds ago Up 10 secs   0.0.0.0:27017->27017/tcp   mongodb-container
+This shows that the MongoDB container is successfully running and accessible through port 27017.
+```
